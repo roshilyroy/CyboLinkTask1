@@ -10,11 +10,91 @@
         <link rel="stylesheet" href="kitchorStyle.css">
     </head>
     <body>
-        <header></header>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top py-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><i class="fa-solid fa-sink" style="color: #d1ac09;"></i> KITCHOR</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon" style="color: white;"><i class="fa fa-bars"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav navbar-center mb-2 mb-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">VIRTUAL TOURS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                      </li>
+                      
+                    </ul>
+            
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="nav-item">
+                        <span style="color: #ffffff;">Call Us: <a href="#" style="color: #d1ac09;">084 234 56 789</a> </span>
+                      </li>
+                      <li class="nav-item">
+                        <a style="padding-left: 15px;"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="padding-left: 15px;"><i class="fa-regular fa-user" style="color: #ffffff;"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="padding-left: 15px;"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
 
-        <div class="container">
+            <script>
+                const navEl = document.querySelector('.navbar');
+
+                window.addEventListener('scroll', () => {
+                    if(window.scrollY >= 100){
+                        navEl.classList.add('navbar-scrolled');
+                    } else if (window.scrollY < 100){
+                        navEl.classList.remove('navbar-scrolled');
+                    }
+                });
+            </script>
+
+
+            <div
+                class="bg-image"
+                style="background-image: url(./imgs/kitchor6.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"
+            >
+            <div style="background-color: rgba(36, 36, 36, 0.8)">
+                <div class="intro" style="text-align: center; color: white;">
+                    <h1>Make a kitargu kitchen part of the family</h1>
+                    <p style="padding-top: 1%">
+                      Kitchens should be designed around what's truly important, family, food and life.
+                    </p>
+                    <div class="text-center" style="padding-top: 1%">
+                        <button type="submit" class="introbutton">VISIT SHOW ROOM&nbsp; <i class="fa-solid fa-arrow-right"></i> </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <div class="container" style="padding-top: 5%;">
             <div class="row">
-                <div class="col-md-6"><img src="kitchor.jpg" class="center kitchorimg" id="webimg"></div>
+                <div class="col-md-6"><img src="imgs/kitchor.jpg" class="center kitchorimg" id="webimg"></div>
                 <div class="col-md-6" id="section">
                     <h6 style="text-align: center; color: #d1ac09;" class="about">ABOUT US</h6>
                     <h1 style="text-align: center; padding: 8px; font-weight:700;" class="habout">Creative solutions <br>by professional <br>designers</h1>
@@ -23,7 +103,7 @@
                         <button type="submit" class="button">CONTINUE READING &nbsp; <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i> </button>
                     </div>
                 </div>
-                <div class="col-md-6"><img src="kitchor.jpg" class="center kitchorimg" id="resimg"></div>
+                <div class="col-md-6"><img src="imgs/kitchor.jpg" class="center kitchorimg" id="resimg"></div>
             </div>
             <div class="row">
                 <div class="col-md-6" id="section">
@@ -32,13 +112,13 @@
                     <h5 class="hkitchor" style="text-align: center;">Joshua Keith </h5>
                     <p style="text-align: center; font-size: 18px;">Lead Design</p>
                 </div>
-                <div class="col-md-6"><img src="kitchor1.jpg" class="center kitchorimg1"></div>
+                <div class="col-md-6"><img src="imgs/kitchor1.jpg" class="center kitchorimg1"></div>
             </div>
         </div>
 
         <div class="container work">
             <div class="row" style="text-align: center; ">
-                <div class="col-md-3 col-6 p-3"><h1 style="color: #d1ac09;">25+</h1> <p style="font-size:18px ; color: #5e5e5e;"> <b>Interior Design</b></p></div>
+                <div class="col-md-3 col-6 p-3 workdiv1"><h1 style="color: #d1ac09;">25+</h1> <p style="font-size:18px ; color: #5e5e5e;"> <b>Interior Design</b></p></div>
                 <div class="col-md-3 col-6 p-3 workdiv" style="border-left: 1px solid #adadad ;"><h1 style="color: #d1ac09;">93+</h1> <p style="font-size:18px ; color: #5e5e5e;"> <b>Architechture</b> </p></div>
                 <div class="col-md-3 col-6 p-3 workdiv" style="border-left: 1px solid #adadad ;"><h1 style="color: #d1ac09;">48+</h1> <p style="font-size:18px ; color: #5e5e5e;"> <b>Construction</b> </p></div>
                 <div class="col-md-3 col-6 p-3 workdiv" style="border-left: 1px solid #adadad ;"><h1 style="color: #d1ac09;">68+</h1> <p style="font-size:18px ; color: #5e5e5e;"> <b>Projects Done</b> </p></div>
@@ -47,7 +127,7 @@
 
         <div class="container-fluid service" style="background-color: #5e5e5e;">
             <div>
-                <img src="kitchor2.jpg" class="center serviceimg" width="60%" >
+                <img src="imgs/kitchor2.jpg" class="center serviceimg" width="60%" >
             </div>
             <div class="row servicerow">
                 <div class="col-md-4 ourservice">
@@ -60,21 +140,21 @@
                 <div class="col-md-8 homeservice" style="color: white;">
                     <div class="row">
                         <div class="col-sm-6 homekit">
-                            <h4><i class="fa-solid fa-screwdriver-wrench"></i> Smart Care</h4>
+                            <h4><i class="fa-solid fa-screwdriver-wrench"></i> &nbsp;&nbsp;Smart Care</h4>
                             <p>Proud of professional Ecommerce services on live chat, dedicate consultation expertise and professional designers.</p>
                         </div>
                         <div class="col-sm-6 homekit">
-                            <h4><i class="fa-solid fa-box-tissue"></i> Kitchen Planner</h4>
+                            <h4><i class="fa-solid fa-box-tissue"></i> &nbsp;&nbsp;Kitchen Planner</h4>
                             <p>Enjoy fast delivery with our service. Receive interior/exterior furniture for house as quickly as you want the best offer.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 homekit">
-                            <h4><i class="fa-solid fa-house-chimney"></i> Home Check</h4>
+                            <h4><i class="fa-solid fa-house-chimney"></i> &nbsp;&nbsp;Home Check</h4>
                             <p>Perfect consultation with home check. Check carefully your home before suggesting suitable interior design in your sweet home</p>
                         </div>
                         <div class="col-sm-6 homekit">
-                            <h4><i class="fa-solid fa-user-gear"></i> Kitchen Design</h4>
+                            <h4><i class="fa-solid fa-user-gear"></i> &nbsp;&nbsp;Kitchen Design</h4>
                             <p>Not sure where to start? Let us help. We can handle all aspects of your kitchen refresh, design your own style and make it special.</p>
                         </div>
                     </div>
@@ -87,9 +167,35 @@
             <h6 style="text-align: center; color: #d1ac09;">HOW WE WORK</h6>
             <h1 style="text-align: center; font-weight:700;">3 Easy steps to get interior design</h1>
             <p style="text-align: center;">The view of your kitchen varies from one layout to another. The shape of the kitchen also determines the and space for cabinets, countertops and accessories.</p>
-            <div>
-                <img src="kitchor4.jpg" class="center" width="70%">
-            </div>        
+            <!-- <div>
+                <img src="imgs/kitchor4.jpg" class="center" width="70%">
+            </div>  -->
+            <div
+                class="center workimg" 
+                style="width: 70%; background-image: url(./imgs/kitchor4.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"
+            >
+           
+                <div style="text-align: center; color: white; background-color: rgba(85, 85, 85, 0.4)">
+                    <div class="row rowstyle">
+                        <div class="col-4 howweimg">
+                            <h1 style="font-family: Jazz LET, fantasy;">01</h1>
+                            <h2>We Visit<br>You At Home</h2>
+                            <a href="#" style="text-decoration: none; color: white;">READ MORE &nbsp; <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                        </div>
+                        <div class="col-4 howweimg" style="border-left: 1px solid #dfdfdf;">
+                            <h1 style="font-family: Jazz LET, fantasy;">02</h1>
+                            <h2>Preliminary<br>Computer Designs</h2>
+                            <a href="#" style="text-decoration: none; color: white;">READ MORE &nbsp; <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                        </div>
+                        <div class="col-4 howweimg" style="border-left: 1px solid #dfdfdf;">
+                            <h1 style="font-family: Jazz LET, fantasy;">03</h1>
+                            <h2>Begin Detailed<br>Design Process</h2>
+                            <a href="#" style="text-decoration: none; color: white;">READ MORE &nbsp; <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>       
         </div>
 
         <div class="container howwework">
@@ -100,16 +206,16 @@
         </div>
         <div class="container-fluide">
             <div class="row">
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor5.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor6.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor7.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor8.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor5.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor15.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor8.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor7.jpg" width="100%" ></div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor9.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor10.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor11.jpg" width="100%" ></div>
-                <div class="col-lg-3 col-md-6" style="padding:0;"><img src="kitchor12.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor9.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor10.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor11.jpg" width="100%" ></div>
+                <div class="col-lg-3 col-md-6 gallery" style="padding:0;"><img src="imgs/kitchor12.jpg" width="100%" ></div>
             </div>
         </div> 
 
@@ -120,7 +226,7 @@
         <div class="container qualitycontainer">
             <div class="row">
                 <div class="col-md-6 qualityimg" id="webimg" >
-                    <img src="kitchor13.jpg" class="center" width="100%">
+                    <img src="imgs/kitchor13.jpg" class="center" width="100%">
                     <div class="bottomright"><h1 style="font-weight: 900;">$ 15K</h1><p>High-End Brands</p></div>
                 </div>
                 <div class="col-md-6 quality">
@@ -132,31 +238,167 @@
                     </div>
                 </div>
                 <div class="col-md-6 qualityimg" id="resimg">
-                    <img src="kitchor13.jpg" class="center"  width="100%">
+                    <img src="imgs/kitchor13.jpg" class="center"  width="100%">
                     <div class="bottomright"><h1 style="font-weight: 900;">$ 15K</h1><p>High-End Brands</p></div>
 
                 </div>
             </div>
+            <div class="row" style="padding-top: 8%;">
+                <div class="col-lg-3 col-md-6 logo" ><img src="imgs/logo.png" width="100%" class="logos" ></div>
+                <div class="col-lg-3 col-md-6 logo" ><img src="imgs/logo.png" width="100%" class="logos"></div>
+                <div class="col-lg-3 col-md-6 logo" ><img src="imgs/logo.png" width="100%" class="logos"></div>
+                <div class="col-lg-3 col-md-6 logo" ><img src="imgs/logo.png" width="100%" class="logos"></div>
+            </div>
+            
         </div>
 
-        <!-- <div class="container-fluide choice">
-            <img src="kitchor14.jpg" width="100%" >
-            <div class="textimg">YOUR BEST CHOICE</div>
-        </div> -->
-
-        <div class="container-fluide choice">
-            <div class="choiceimg">
-                <h6 style="color: #d1ac09;">YOUR BEST CHOICE</h6>
-                <h1 style="font-weight:700;">Let's start your new<br>dream project</h1>
-                <div class="text-center">
-                    <button type="submit" class="choicebutton">GET A QUOTE&nbsp; <i class="fa-solid fa-arrow-right"></i> </button>
+        <div
+            class="choiceimg"
+            style="background-image: url(./imgs/kitchor14.jpg); background-repeat: no-repeat; background-size: cover;"
+        >
+            <div style="background-color: rgba(36, 36, 36, 0.8)">
+                <div class="choice" style="text-align: center; color: white;">
+                    <h6 style="color: #d1ac09;">YOUR BEST CHOICE</h6>
+                    <h1 style="font-weight:700;">Let's start your new<br>dream project</h1>
+                    <div class="text-center" style="padding-top: 1%">
+                        <button type="submit" class="choicebutton">GET A QUOTE&nbsp; <i class="fa-solid fa-arrow-right"></i> </button>
+                    </div>
                 </div>
             </div>
         </div>
 
 
 
-        <footer style="padding-top: 50px;"> footer </footer>
+        <div class="container" style="padding: 5%;">
+            <h6 style="color: #d1ac09; text-align: center;">OUR BLOG</h6>
+            <h1 style="font-weight:700; text-align: center; padding-bottom: 5%;">Follow the latest news</h1>
+            <div class="row news">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <img src="imgs/kitchor15.jpg" class="cardimg">
+                        <div class="card-body">
+                          <h5 class="card-title">A Stunning Classic Shaker Kitchen In Halesowen</h5>
+                          <p class="card-date" style="color:#5e5e5e;"><i class="fa-solid fa-calendar-days" style="color: #d1ac09;"></i> June 24, 2022  By <b>Admin</b></p>
+                          <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen. Whether it's transitional, traditional, indusstrial, or contemporary, every kitchen design style has specific features that work together</p>
+                          <a href="#" style="border-bottom: 2px solid #d1ac09; text-decoration: none; color: black;"><b>READ MORE</b></a>
+                        </div>
+                      </div>
+                </div> 
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="row"> 
+                                  <div class="col-5 cardimg1">
+                                    <img src="imgs/kitchor16.jpg" class="img-fluid">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Pros And Cons of Large Format Porcelain</h5>
+                                        <p class="card-date" style="color:#5e5e5e;"><i class="fa-solid fa-calendar-days" style="color: #d1ac09;"></i> June 24, 2022  By <b>Admin</b></p>
+                                        <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen. Whether it's transitional, traditional, indusstrial, or contemporary, every kitchen design style has specific features that work together</p>
+                                        <a href="#" style="border-bottom: 2px solid #d1ac09; text-decoration: none; color: black;"><b>READ MORE</b></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 6%;">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="row">
+                                  <div class="col-5 cardimg1">
+                                    <img src="imgs/kitchor17.jpg" class="img-fluid">
+                                  </div>
+                                  <div class="col-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Hesitant Homeowner - What Make Us Delay</h5>
+                                        <p class="card-date" style="color:#5e5e5e;"><i class="fa-solid fa-calendar-days" style="color: #d1ac09;"></i> June 24, 2022  By <b>Admin</b></p>
+                                        <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen. Whether it's transitional, traditional, indusstrial, or contemporary, every kitchen design style has specific features that work together</p>
+                                        <a href="#" style="border-bottom: 2px solid #d1ac09; text-decoration: none; color: black;"><b>READ MORE</b></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+
+
+
+        <footer style="padding-top: 10px;">
+            <div
+            class="footerimg"
+            style="background-image: url(./imgs/kitchor3.jpg); background-repeat: no-repeat; background-size: cover;"
+        >
+            <div style="background-color: rgba(36, 36, 36, 0.8)">
+                <div class="footer" style="text-align: center; color: white;">
+                    <h6 style="color: #d1ac09;">YOU DREAM IT, WE DESIGN IT</h6>
+                    <h1 style="font-weight:700;">We can build you the kitchen<br>of your dreams</h1>
+                    <div class="text-center" style="padding-top: 1%">
+                        <button type="submit" class="footerbutton">SCHEDULE A CHAT&nbsp; <i class="fa-solid fa-calendar-days"></i> </button>
+                    </div>
+                </div>
+                <div class="container-fluid footersocial">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6" style="color: #ffffff;">
+                            <div class="footlogo"><i class="fa-solid fa-sink" style="color: #d1ac09;"></i> KITCHOR</div>
+                            <p class="footpara">Subscribe to receive inspiration, ideas, and news in your inbox.</p>
+                            <p class="footphone"><i class="fa-solid fa-phone-volume" style="color: #d1ac09;"></i> +1875 333 489 <br> <span style="color: #d1ac09;">Round-the-clock</span></p>
+                            <p class="footpara">
+                                <a href="" target="_blank"><i class="fa-brands fa-twitter"  style="color: #ffffff;"></i></a>
+                                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"  style="color: #ffffff;"></i></a>
+                                <a href="" target="_blank"><i class="fa-brands fa-instagram"  style="color: #ffffff;"></i></a>
+                                <a href="" target="_blank"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6" style="color: #ffffff;">
+                            <div class="footlist">ABOUT US</div>
+                            <dl>
+                                <dt><a href="#">About us</a></dt>
+                                <dt><a href="#">Our team</a></dt>
+                                <dt><a href="#">Testimonials</a></dt>
+                                <dt><a href="#">Right sidebar page</a></dt>
+                                <dt><a href="#">Shortcodes</a></dt>
+                            </dl>
+                        </div>
+                        <div class="col-lg-2 col-md-6" style="color: #ffffff;">
+                            <div class="footlist">EXPLORE</div>
+                            <dl>
+                                <dt><a href="#">Kitchen Cabinets</a></dt>
+                                <dt><a href="#">Counter Tops</a></dt>
+                                <dt><a href="#">Bathroom Vanities</a></dt>
+                                <dt><a href="#">Vanity Tops</a></dt>
+                            </dl>
+                        </div>
+                        <div class="col-lg-2 col-md-6"style="color: #ffffff;" >
+                            <div class="footlist">QUICK LINKS</div>
+                            <dl>
+                                <dt><a href="#">FAQ</a></dt>
+                                <dt><a href="#">Blog</a></dt>
+                                <dt><a href="#">Design & Quote</a></dt>
+                                <dt><a href="#">Warranty</a></dt>
+                                <dt><a href="#">Trade Partners</a></dt>
+                                <dt><a href="#">Design</a></dt>                                
+                            </dl>
+                        </div>
+                        <div class="col-lg-3 col-md-6" style="color: #ffffff;">
+                            <div class="footlist">SUBSCRIBE TO OUR NEWSLETTER</div>
+                            <p class="footpara">Subscribe to receive inspiration, ideas, ans news in your inbox.</p>
+                            <div class="Subscribe">Your email <a href="#" style="float: right; color: #d1ac09; text-decoration: none;">Subscribe</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footercopy">
+                    <span>© Copyright 2022 <a href="#" style="color: #d1ac09; text-decoration: none;">kitchor.</a> All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+        </footer>
 
     </body>
 </html>
